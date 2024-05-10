@@ -1,0 +1,73 @@
+# # # # # # # # # # # # # # # # # # # # #
+#
+#  Recommended version is 1.16.x
+#  Our discord channel: dsc.gg/purstudio
+#
+#   Author: bkkuc (t.me/bkkuc | discord -> bkkuc)
+#   For help / new ideas / order write me.
+#
+#  Depends:
+#  - WorldGuard (https://dev.bukkit.org/projects/worldguard/files/3342964)
+#
+#  Commands:
+#  - /th                  | Permission: OP
+#  - /th add [chance]     | Permission: OP
+#
+# # # # # # # # # # # # # # # # # # # # #
+# (The English text may contain errors (sry for my bad eng :())
+
+# ENG * Logging founded map loot-table and Logging spawned treasure location.
+# RU  * Логировать ли найденные карты сокровище и появивших сокровищ.
+debug-mode: true
+
+# ENG * Can the treasure spawn in the region?
+# RU  * Может ли клад заспавниться в регионе?
+#
+# Default: false
+can-spawn-in-region: false
+
+# ENG * The world where the treasure will appear.
+# RU  * Мир где появится клад.
+world: world
+
+# ENG * Coordinates distance to spawn treasure.
+# RU  * Дистанция координат для спавна сокровище.
+coords:
+  # x;z
+  min: 500;500
+  max: 1500;2000
+
+  # ENG * How to deeply embed the treasure.
+  # RU  * Как глубоко внедрить клад.
+  y-deep: 15
+
+# ENG * Biomes there the treasures don't spawn.
+# RU  * Биомы где сокровище не появится.
+#
+# (link) - https://helpch.at/docs/1.16.5/org/bukkit/block/Biome.html
+blacklist-biomes:
+  - 'BEACH'
+
+# ENG * In which structures should the treasure map not appear.
+# RU  * В каких структурах не должен появляться карта клада.
+#
+# (link) - https://helpch.at/docs/1.16.5/org/bukkit/loot/LootTables.html
+blacklist-loottables:
+  - 'JUNGLE_TEMPLE_DISPENSER'
+  # - 'END_CITY_TREASURE'
+  # - 'SHIPWRECK_TREASURE'
+
+# ENG * With what chance can a map appear in the dungeons?
+# RU  * С каким шансом может появиться карта в данжах?
+chance-spawn-map: 30
+
+# ENG * Treasure map settings.
+# RU  * Настройка карты сокровище.
+map:
+  display-name: '&6Treasure Map'
+  # All scales:
+  # https://helpch.at/docs/1.16.5/org/bukkit/map/MapView.Scale.html
+  scale: CLOSE
+  # All cursors:
+  # https://helpch.at/docs/1.16.5/org/bukkit/map/MapCursor.Type.html
+  cursor: RED_X

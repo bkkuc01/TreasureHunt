@@ -1,0 +1,14 @@
+name: TreasureHunt
+version: '1.0'
+main: pl.bkkuc.treasurehunt.Plugin
+api-version: '1.16'
+
+depend:
+  - WorldGuard
+
+author: 't.me/bkkuc'
+website: 'dsc.gg/purstudio'
+
+commands:
+  treasurehunt:
+    aliases: [th]

@@ -1,0 +1,12 @@
+items:
+  'example':
+    chance: 100
+    material: DIAMOND
+    name: '&bDIAMOND'
+    lore: []
+    hide-flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+      - 'DURABILITY;3'
+
+special-items: {}
